@@ -10,7 +10,7 @@
 | [`mutation-testing`](mutation-testing/SKILL.md) | Mutation Testing，用 mutmut / StrykerJS 检查测试是否真能发现 bug，解释 survivor 测试缺口 |
 | [`test-generation`](test-generation/SKILL.md) | 分析现有测试与覆盖率，找出缺失场景并生成高质量测试（pytest / unittest，Vitest / Jest / node:test），补真正能杀 mutant 的测试 |
 
-三者配合使用：先用 `crap-analysis` 定位高危函数，再用 `mutation-testing` 验证这些函数的测试是否真的有效，最后用 `test-generation` 补上缺口。所有 skill 默认只分析不改代码；补测试 / 重构需要用户明确要求。
+三者配合使用：先用 `crap-analysis` 定位高危函数，再用 `test-generation` 补上缺失的测试，最后用 `mutation-testing` 验证这些测试是否真的有效。所有 skill 默认只分析不改代码；补测试 / 重构需要用户明确要求。
 
 ## 安装
 
